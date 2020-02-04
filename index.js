@@ -4,18 +4,6 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const figlet = require("figlet");
 const shell = require("shelljs");
-const axios = require("axios");
-
-const req = () => {
-  axios
-    .get("https://trcfinal.herokuapp.com/user/list")
-    .then(response => {
-      console.log(response.data.userList);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-};
 
 const init = () => {
   console.log(
@@ -50,14 +38,15 @@ const askQuestions = () => {
 };
 
 const createFile = (filename, extension) => {
-  req();
-  const filePath = `${process.cwd()}/${filename}.${extension}`;
+  const filePath = `${process.cwd()}/${filename}.${extension}`
   shell.touch(filePath);
   return filePath;
 };
 
 const success = filepath => {
-  console.log(chalk.white.bgGreen.bold(`Done! File created at ${filepath}`));
+  console.log(
+    chalk.white.bgGreen.bold(`Done! File created at ${filepath}`)
+  );
 };
 
 const run = async () => {
