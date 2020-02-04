@@ -2,7 +2,9 @@
 
 Built using
 
+```
 - inquirer
 - chalk
 - figlet
 - shelljs
+```
