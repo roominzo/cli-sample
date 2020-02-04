@@ -8,3 +8,5 @@ Built using
 - figlet
 - shelljs
 ```
+
+![CLI TOOL](https://i.imgur.com/3sTAeaZ.png)
