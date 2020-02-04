@@ -10,3 +10,7 @@ Built using
 ```
 
 ![CLI TOOL](https://i.imgur.com/3sTAeaZ.png)
+
+Run 
+
+``` filec ```
